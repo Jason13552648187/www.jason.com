@@ -78,7 +78,7 @@ public class DoubleArrayDemo{
 			上海：108,504,147
 			天津：300,70,55
 		*/
-		int[] arr[]  = {
+		/*int[] arr[]  = {
 			{130,600,400,150,1000},
 			{108,504,147},
 			{300,70,55}
@@ -93,51 +93,62 @@ public class DoubleArrayDemo{
 		}
 
 		System.out.println("三个城市人口总数为：" +  sum);
-
+*/
 
 		
-		int[][] an = {
-			{1,2, 3,  4},
-			{5,6, 7,  8},
+		/*int[][] an = {
+			{1,2, 21,  4},
+			{5,6, 9,  8},
 			{9,10,11,12},
 			{1,2, 2,  3}
 		};
+		//求鞍点：每一行的最大值在当前列是最小值，那么该值就是鞍点。
+		int count = 0;
+		for (int i = 0;i <  an.length ;i++ ){
+			int index = 0;
+			int max = an[i][0];
+			for (int j = 0;j <an[i].length ;j++ ){
+				if (max < an[i][j]){
+					index = j;
+					max = an[i][j];
+				}
+			}
+			boolean flag = true;
+			for (int k = 0;k < an.length ;k++ ){
+				if (max > an[k][index]){
+					flag = false;
+					break;
+				}
+			}
+
+			if (flag){
+				System.out.println("第" + (i+1) + "行有一个鞍点：" + max);
+				count ++;
+			}
+
+		}	
+		if (count > 0){
+			System.out.println("总共有" + count + "个鞍点！");
+		}else {
+			System.out.println("没有鞍点！");
+		}*/
+
+
+
+
 
 
 
 
 		//美团面试题：有以下二维数组，实现打印顺序为下列方式。
 		int[][] arr = {
-			{1, 2,  3,  4},
-			{5, 6,  7,  8},
+			{1, 2,  3, 4},
+			{5, 6,  7, 8},
 			{9, 10, 11, 12},
 			{13,14, 15, 16}
 		};
 		//打印顺序：4 3 8 2 7 12 1 6 11 16 5 10 15 9 14 13
-
 		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	}	
 }

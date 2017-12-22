@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class GuessNumberGame{
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
-		//Math.random()会随机产生一个0~1的随机数，所以*1000,产生的范围为1~10001
+		//Math.random()会随机产生一个0~1的随机数，所以*1000,产生的范围为1~1000
 		int num1 = (int)(Math.random()*1000);//0 ~ 1000
 		int count = 0;
 		while (true){
